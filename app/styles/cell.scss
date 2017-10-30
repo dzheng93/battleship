@@ -1,0 +1,62 @@
+@import "mixins";
+
+.cell {
+  width: 10%;
+  float: left;
+  background-color: $light-grey;
+  outline: $grey-border;
+
+  @include breakpoint(xs) {
+    height: 30px;
+  }
+
+  @include breakpoint(s) {
+    height: 45px;
+  }
+
+  @include breakpoint(m) {
+    height: 73px;
+  }
+
+  @include breakpoint(l) {
+    height: 55px;
+  }
+
+  @include breakpoint(xl) {
+    height: 55px;
+  }
+
+  .hit {
+    width: 30px;
+
+    @include breakpoint(s) {
+      width: 45px;
+    }
+    @include breakpoint(m) {
+      width: 73px;
+    }
+    @include breakpoint(l) {
+      width: 55px;
+    }
+    @include breakpoint(xl) {
+      width: 55px;
+    }
+  }
+
+  .miss {
+    width: 30px;
+
+    @include breakpoint(s) {
+      width: 45px;
+    }
+    @include breakpoint(m) {
+      width: 73px;
+    }
+    @include breakpoint(l) {
+      width: 55px;
+    }
+    @include breakpoint(xl) {
+      width: 55px;
+    }
+  }
+}

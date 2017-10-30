@@ -1,0 +1,182 @@
+@import "mixins";
+
+.legend {
+  @include breakpoint(xs) {
+    margin-top: 10px;
+  }
+
+  @include breakpoint(s) {
+    float: right;
+    margin: 10px 10px 0 0;
+    height: 80px;
+    width: 290px;
+  }
+
+  @include breakpoint(m) {
+    float: right;
+    margin: 10px 10px 0 0;
+    height: 80px;
+    width: 420px;
+  }
+
+  @include breakpoint(l) {
+    float: left;
+    margin: 20px 0 0 6%;
+    height: 80px;
+    width: 320px;
+  }
+
+  @include breakpoint(xl) {
+    float: left;
+    margin: 20px 0 0 6%;
+    height: 80px;
+    width: 320px;
+  }
+
+  .hitCounter {
+    @include breakpoint(xs) {
+      margin-top: 6px;
+    }
+
+    @include breakpoint(s) {
+      margin-top: 5px;
+    }
+
+    @include breakpoint(m) {
+      margin-top: 10px;
+    }
+
+    @include breakpoint(l) {
+      padding-top: 11px;
+    }
+
+    @include breakpoint(xl) {
+      padding-top: 11px;
+    }
+  }
+
+  .carrier {
+    float: left;
+    width: 50%;
+    height: 30px;
+    @include breakpoint(m) {
+      height: 50px;
+    }
+    @include breakpoint(l) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+    @include breakpoint(xl) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+  }
+  .submarine {
+    float: right;
+    width: 50%;
+    height: 30px;
+    @include breakpoint(m) {
+      height: 50px;
+    }
+    @include breakpoint(l) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+    @include breakpoint(xl) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+  }
+  .battleship {
+    float: left;
+    width: 50%;
+    height: 30px;
+    @include breakpoint(m) {
+      height: 50px;
+    }
+    @include breakpoint(l) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+    @include breakpoint(xl) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+  }
+  .cruiser {
+    float: left;
+    width: 50%;
+    height: 30px;
+    @include breakpoint(m) {
+      height: 50px;
+    }
+    @include breakpoint(l) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+    @include breakpoint(xl) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+  }
+  .destroyer {
+    float: left;
+    width: 50%;
+    height: 30px;
+    @include breakpoint(m) {
+      height: 50px;
+      float: left;
+    }
+    @include breakpoint(l) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+    @include breakpoint(xl) {
+      height: 60px;
+      float: none;
+      width: 320px;
+    }
+  }
+  .ship-icon {
+    @include breakpoint(xs) {
+      float: left;
+      width: 80px;
+      display: inline-block;
+      margin-right: 10px;
+      margin: 0 10px 0 4px;
+    }
+
+    @include breakpoint(s) {
+      float: left;
+      width: 70px;
+      margin-right: 10px;
+    }
+
+    @include breakpoint(m) {
+      float: left;
+      width: 100px;
+      margin-right: 10px;
+    }
+
+    @include breakpoint(l) {
+      float: left;
+      width: 150px;
+      margin-right: 10px;
+    }
+
+    @include breakpoint(xl) {
+      float: left;
+      width: 150px;
+      margin-right: 10px;
+    }
+  }
+}

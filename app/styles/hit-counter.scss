@@ -1,0 +1,32 @@
+@import "mixins";
+
+.hitCounter {
+  .hit {
+    width: 12px;
+    @include breakpoint(m) {
+      width: 16px;
+    }
+    @include breakpoint(l) {
+      width: 20px;
+      margin-right: 5px;
+    }
+    @include breakpoint(xl) {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+  .not-hit {
+    width: 12px;
+    @include breakpoint(m) {
+      width: 16px;
+    }
+    @include breakpoint(l) {
+      width: 20px;
+      margin-right: 5px;
+    }
+    @include breakpoint(xl) {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+}

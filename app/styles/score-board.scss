@@ -1,0 +1,166 @@
+@import "mixins";
+
+.scoreBoard {
+
+  @include breakpoint(xs) {
+    display: inline-block;
+    width: 320px;
+    margin-top: -5px;
+  }
+
+  @include breakpoint(s) {
+    width: 160px;
+    margin: 10px 0 0 10px;
+    float: left;
+  }
+
+  @include breakpoint(m) {
+    width: 300px;
+    margin: 10px 0 0 20px;
+    float: left;
+  }
+
+  @include breakpoint(l) {
+    width: 320px;
+    margin: 10px 0 0 20px;
+    float: left;
+    margin-left: 6%;
+    margin-top: 26px;
+  }
+
+  @include breakpoint(xl) {
+    width: 320px;
+    margin: 10px 0 0 20px;
+    float: left;
+    margin-left: 6%;
+    margin-top: 26px;
+  }
+
+  .player-one-score {
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 70px;
+    background-color: $orange;
+    color: $dark-grey;
+
+    @include breakpoint(s) {
+      height: 80px;
+    }
+
+    @include breakpoint(m) {
+      height: 130px;
+    }
+
+    @include breakpoint(l) {
+      height: 160px;
+    }
+
+    @include breakpoint(xl) {
+      height: 160px;
+    }
+  }
+
+  .score-total {
+    display: block;
+    font-size: 30px;
+    font-family: sans-serif;
+
+    @include breakpoint(s) {
+      font-size: 20px;
+      padding-top: 10px;
+    }
+
+    @include breakpoint(m) {
+      font-size: 45px;
+      padding-top: 20px;
+    }
+
+    @include breakpoint(l) {
+      font-size: 55px;
+      padding-top: 15px;
+      font-weight: 600;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 55px;
+      padding-top: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .score-border {
+    border-bottom: 1px solid $dark-grey;
+    width: 90px;
+    margin: 5px auto;
+
+    @include breakpoint(s) {
+      border-bottom: 1px solid $dark-grey;
+      width: 65px;
+      margin: 9px auto 3px;
+    }
+
+    @include breakpoint(m) {
+      border-bottom: 1px solid $dark-grey;
+      width: 95px;
+      margin: 12px auto 3px;
+    }
+
+    @include breakpoint(l) {
+      border-bottom: 1px solid $dark-grey;
+      width: 140px;
+      margin: 15px auto 5px;
+    }
+
+    @include breakpoint(xl) {
+      border-bottom: 1px solid $dark-grey;
+      width: 140px;
+      margin: 15px auto 5px;
+    }
+  }
+
+  .player-name {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 2;
+
+    @include breakpoint(m) {
+      font-size: 18px;
+    }
+
+    @include breakpoint(l) {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .player-two-score {
+    text-align: center;
+    background-color: $turquoise;
+    height: 70px;
+    float: right;
+    width: 50%;
+    color: $dark-grey;
+
+    @include breakpoint(s) {
+      height: 80px
+    }
+
+    @include breakpoint(m) {
+      height: 130px
+    }
+
+    @include breakpoint(l) {
+      height: 160px;
+    }
+
+    @include breakpoint(xl) {
+      height: 160px;
+    }
+  }
+}

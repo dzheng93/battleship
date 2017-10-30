@@ -1,0 +1,33 @@
+$grey-border: 1px solid #979797;
+$orange: #ffb000;
+$purple: #9494ff;
+$turquoise: #25b79f;
+$dark-grey: #4a4a4a;
+$light-purple: #7676b7;
+$light-grey: #f8f8f8;
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 320px) { @content; }
+  }
+
+  @else if $class == s {
+    @media (min-width: 321px) and (max-width: 480px) { @content; }
+  }
+
+  @else if $class == m {
+    @media (min-width: 481px) and (max-width: 768px) { @content; }
+  }
+
+  @else if $class == l {
+    @media (min-width: 769px) and (max-width: 1024px) { @content; }
+  }
+
+  @else if $class == xl {
+    @media (min-width: 1025px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, s, m, l, xl";
+  }
+}

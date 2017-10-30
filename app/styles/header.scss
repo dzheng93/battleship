@@ -1,0 +1,151 @@
+@import "mixins";
+
+.header {
+  height: 46px;
+  @include breakpoint(xs) {
+    width: 320px;
+  }
+  @include breakpoint(s) {
+    width: 480px;
+  }
+  @include breakpoint(m) {
+    width: 768px;
+  }
+  @include breakpoint(l) {
+    width: 1024px;
+  }
+  @include breakpoint(xl) {
+    width: 100%;
+  }
+
+  .one {
+    height: 30px;
+    background-color: $dark-grey;
+    border: 8px solid $purple;
+    float: left;
+    @include breakpoint(xs) {
+      width: 50px;
+    }
+    @include breakpoint(s) {
+      width: 55px;
+    }
+    @include breakpoint(m) {
+      width: 60px;
+    }
+    @include breakpoint(l) {
+      width: 50px;
+    }
+    @include breakpoint(xl) {
+      width: 5%;
+      border: 1vw solid $purple;
+    }
+  }
+  .two {
+    height: 30px;
+    background-color: white;
+    border: 8px solid $purple;
+    border-left: 5px;
+    border-right: 0;
+    float: left;
+    @include breakpoint(xs) {
+      width: 168px;
+    }
+    @include breakpoint(s) {
+      width: 317px;
+    }
+    @include breakpoint(m) {
+      width: 600px;
+    }
+    @include breakpoint(l) {
+      width: 761px;
+    }
+    @include breakpoint(xl) {
+      width: 71%;
+      border: 1vw solid $purple;
+      border-width: 1vw 0 1vw 0;
+    }
+  }
+  .three {
+    height: 30px;
+    background-color: $light-purple;
+    border: 8px solid $purple;
+    border-left: 5px;
+    float: left;
+    @include breakpoint(xs) {
+      width: 35px;
+    }
+    @include breakpoint(s) {
+      width: 38px;
+    }
+    @include breakpoint(m) {
+      width: 38px;
+    }
+    @include breakpoint(l) {
+      width: 75px;
+    }
+    @include breakpoint(xl) {
+      width: 7.8%;
+      border: 1vw solid $purple;
+      border-width: 1vw 0.5vw 1vw 0.7vw;
+    }
+  }
+  .four {
+    height: 30px;
+    background-color: $dark-grey;
+    border: 8px solid $purple;
+    border-left: 5px;
+    float: left;
+    @include breakpoint(xs) {
+      width: 35px;
+    }
+    @include breakpoint(s) {
+      width: 38px;
+    }
+    @include breakpoint(m) {
+      width: 38px;
+    }
+    @include breakpoint(l) {
+      width: 30px;
+    }
+    @include breakpoint(xl) {
+      width: 3%;
+      border: 1vw solid $purple;
+    }
+  }
+  .five {
+    @include breakpoint(l) {
+      height: 30px;
+      background-color: $dark-grey;
+      border: 8px solid $purple;
+      border-left: 5px;
+      float: left;
+      width: 30px;
+    }
+    @include breakpoint(xl) {
+      height: 30px;
+      background-color: $dark-grey;
+      border: 1vw solid $purple;
+      border-left: 5px;
+      float: left;
+      width: 3%;
+    }
+  }
+  .six {
+    @include breakpoint(l) {
+      height: 30px;
+      background-color: $dark-grey;
+      border: 8px solid $purple;
+      border-left: 5px;
+      float: left;
+      width: 30px;
+    }
+    @include breakpoint(xl) {
+      height: 30px;
+      background-color: $dark-grey;
+      border: 1vw solid $purple;
+      border-left: 5px;
+      float: left;
+      width: 3%;
+    }
+  }
+}
